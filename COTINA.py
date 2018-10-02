@@ -376,7 +376,7 @@ def saveUnAsnweredQuestInLibrary(question):
 
 # Talk and listen
 def speakup(usrip):
-    print('Alex : ' + usrip)
+    print('Cotina : ' + usrip)
     speak.Speak(usrip)
 
 def listentome():
@@ -523,7 +523,7 @@ def updateLibrary():
 
 def TalkNLearn():
     usrresp=""
-    speakup(str(random.choice(['Hi, My Name is Alex.','Hi, This is Alex','Hi there, its me Alex','Olaa. I am Alex'])))
+    speakup(str(random.choice(['Hi, My Name is Cotina.','Hi, This is Cotina','Hi there, its me Cotina','Olaa. I am Cotina'])))
     time.sleep(1)
     askflag=False
     while True:
@@ -567,7 +567,7 @@ def AskQuestionText():
             answer=""
             if userip.lower()=='bye':
                 #speakup("Bye. Nice to meet you")
-                print('Alex : Bye. Nice to meet you')
+                print('Cotina : Bye. Nice to meet you')
                 break
             else:
                 if userip.strip()!="":
@@ -592,7 +592,7 @@ def AskQuestionText():
                         answer=getGoogleResponse(userip)
 
                     #speakup(answer)
-                    print('Alex : ' + answer)
+                    print('Cotina : ' + answer)
 
 
 # In[ ]:
